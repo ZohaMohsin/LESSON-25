@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 2</title>
+</head>
+<body>
+    <h2> condititonal statements</h2>
+    <button onclick="myfunction()">click here</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+    var greeting="";
+    var time=new date().gethours();
+    function myfunction(){
+
+    
+    if(time<10){
+        greeting="good morning";
+    }
+    else if(time<20){
+        greeting="good day";
+    }
+    else{
+        greeting="good evening";
+    }
+    document.getElementById("p1").innerHTML="current time is "+time;
+    document.getElementById("p2").innerHTML=greeting;
+}
+</script>
+
+
+
+</body>
+</html>
